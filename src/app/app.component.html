@@ -1,7 +1,37 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+<body>
 <div>
-    <h1>This is {{title}}</h1>
-    <app-home-component></app-home-component>
+    <!-- <app-home-component></app-home-component>
     <app-about-component></app-about-component>
     <app-contact-component></app-contact-component>
+    <mat-slide-toggle>Toggle me!</mat-slide-toggle> -->
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>Assignment-1</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon home-icon" aria-label="Example icon-button with home icon">
+        <mat-icon>home</mat-icon>
+    </button>
+    <span><a routerLink="homecomponent">Home</a></span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon about-icon" aria-label="Example icon-button with about icon">
+        <mat-icon>search</mat-icon>
+    </button>
+    <span><a routerLink="aboutcomponent">About</a></span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon contact-icon" aria-label="Example icon-button with home icon">
+        <mat-icon>phone</mat-icon>
+    </button>
+    <span><a routerLink="homecomponent">Contact</a></span>
+    <span class="example-spacer"></span>
+</mat-toolbar>
+<router-outlet></router-outlet>
 
 </div>
+</body>
+</html>

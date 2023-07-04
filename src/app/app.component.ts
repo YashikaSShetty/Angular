@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Yashika-Assignment1';
+  title = "Yashika's-Angular-Assignment";
   constructor(){
   //setTimeout(()=>{
   //  this.title="Changed title";
