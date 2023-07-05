@@ -8,25 +8,30 @@ import { AboutComponentComponent } from './MyComponents/about-component/about-co
 import { ContactComponentComponent } from './MyComponents/contact-component/contact-component.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
+import {MatButtonModule} from '@angular/material/button';9999
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {Component} from '@angular/core';
+import {FormControl, Validators,ReactiveFormsModule} from '@angular/forms';
 
 @NgModule({
-  declarations: [
+  declarations: [//This is where the required external modules are declared
     AppComponent,
     HomeComponentComponent,
     AboutComponentComponent,
     ContactComponentComponent
   ],
-  imports: [
+  imports: [//This is where the required external modules are imported
     BrowserModule,
     AppRoutingModule,
     MatSlideToggleModule,
     MatButtonModule,
     MatIconModule,
     MatToolbarModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
