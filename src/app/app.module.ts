@@ -15,12 +15,16 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {Component} from '@angular/core';
 import {FormControl, Validators,ReactiveFormsModule} from '@angular/forms';
 
+import {MatCardModule} from '@angular/material/card';
+import { ProductsComponentComponent } from './MyComponents/products-component/products-component.component';
+
 @NgModule({
   declarations: [//This is where the required external modules are declared
     AppComponent,
     HomeComponentComponent,
     AboutComponentComponent,
-    ContactComponentComponent
+    ContactComponentComponent,
+    ProductsComponentComponent
   ],
   imports: [//This is where the required external modules are imported
     BrowserModule,
@@ -31,7 +35,8 @@ import {FormControl, Validators,ReactiveFormsModule} from '@angular/forms';
     MatToolbarModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
