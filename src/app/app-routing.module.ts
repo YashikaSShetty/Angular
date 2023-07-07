@@ -4,6 +4,9 @@ import { AboutComponentComponent } from './MyComponents/about-component/about-co
 import { HomeComponentComponent } from './MyComponents/home-component/home-component.component';
 import { ContactComponentComponent } from './MyComponents/contact-component/contact-component.component';
 import { ProductsComponentComponent } from './MyComponents/products-component/products-component.component';
+import { ProductDetailsComponentComponent } from './MyComponents/product-details-component/product-details-component.component';
+import { RegistrationComponentComponent } from './MyComponents/registration-component/registration-component.component';
+import { LoginComponentComponent } from './MyComponents/login-component/login-component.component';
 
 const routes: Routes = [
   {
@@ -21,6 +24,17 @@ const routes: Routes = [
   {
     component:ProductsComponentComponent,
     path:'productscomponent'
+  },
+  { component: ProductDetailsComponentComponent,
+    path: 'product-details-component/:id' 
+  },
+  {
+    component:RegistrationComponentComponent,
+    path:'registrationcomponent'
+  },
+  {
+    component:LoginComponentComponent,
+    path:'logincomponent'
   }
 ];
 

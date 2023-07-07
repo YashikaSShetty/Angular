@@ -8,15 +8,20 @@ import { AboutComponentComponent } from './MyComponents/about-component/about-co
 import { ContactComponentComponent } from './MyComponents/contact-component/contact-component.component';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import {MatIconModule} from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';9999
+import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {Component} from '@angular/core';
 import {FormControl, Validators,ReactiveFormsModule} from '@angular/forms';
-
 import {MatCardModule} from '@angular/material/card';
 import { ProductsComponentComponent } from './MyComponents/products-component/products-component.component';
+import { GoogleMapsModule } from '@angular/google-maps';
+import { HttpClientModule } from '@angular/common/http';
+import { ProductDetailsComponentComponent } from './MyComponents/product-details-component/product-details-component.component';
+import { RegistrationComponentComponent } from './MyComponents/registration-component/registration-component.component';
+import { LoginComponentComponent } from './MyComponents/login-component/login-component.component';
+
 
 @NgModule({
   declarations: [//This is where the required external modules are declared
@@ -24,7 +29,10 @@ import { ProductsComponentComponent } from './MyComponents/products-component/pr
     HomeComponentComponent,
     AboutComponentComponent,
     ContactComponentComponent,
-    ProductsComponentComponent
+    ProductsComponentComponent,
+    ProductDetailsComponentComponent,
+    RegistrationComponentComponent,
+    LoginComponentComponent,
   ],
   imports: [//This is where the required external modules are imported
     BrowserModule,
@@ -36,7 +44,11 @@ import { ProductsComponentComponent } from './MyComponents/products-component/pr
     BrowserAnimationsModule,
     MatFormFieldModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    GoogleMapsModule,
+    HttpClientModule,
+    MatCardModule,
+    MatButtonModule  
   ],
   providers: [],
   bootstrap: [AppComponent]

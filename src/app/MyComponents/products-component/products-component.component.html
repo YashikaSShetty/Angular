@@ -1,17 +1,27 @@
-<p>products-component works!</p>
+<!-- <p>products-component works!</p>
 <div>
 <table style="width:80%">
     <tr>
         <th>id</th>
         <th>name</th>
-        <th>username</th>
+        <th>description</th>
         <th>email</th>
-    </tr>
+    </tr> -->
    <!-- <tr *ngFor="let product of products; let i=index">
         <td>{{i+1}}</td>
         <td>{{product.name}}</td>
         <td>{{product.username}}</td>
         <td>{{product.email}}</td>
     </tr> -->
+<!-- </table>
+</div>  -->
+<table style="width:100%">
+<div>
+    <tr>
+    <mat-card *ngFor="let product of products">
+    <th><mat-card-title>{{ product.name }}</mat-card-title></th>
+    <th><mat-card-content>{{ product.description }}</mat-card-content></th>
+    <button mat-button color="primary" [routerLink]="['/product-details-component', product.id]">Product Details</button>
+    </mat-card></tr>
+  </div>
 </table>
-</div> 
