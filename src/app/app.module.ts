@@ -16,11 +16,12 @@ import {Component} from '@angular/core';
 import {FormControl, Validators,ReactiveFormsModule} from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
 import { ProductsComponentComponent } from './MyComponents/products-component/products-component.component';
-import { GoogleMapsModule } from '@angular/google-maps';
+
 import { HttpClientModule } from '@angular/common/http';
 import { ProductDetailsComponentComponent } from './MyComponents/product-details-component/product-details-component.component';
 import { RegistrationComponentComponent } from './MyComponents/registration-component/registration-component.component';
 import { LoginComponentComponent } from './MyComponents/login-component/login-component.component';
+import { FeedbackComponentComponent } from './MyComponents/feedback-component/feedback-component.component';
 
 
 @NgModule({
@@ -33,6 +34,7 @@ import { LoginComponentComponent } from './MyComponents/login-component/login-co
     ProductDetailsComponentComponent,
     RegistrationComponentComponent,
     LoginComponentComponent,
+    FeedbackComponentComponent,
   ],
   imports: [//This is where the required external modules are imported
     BrowserModule,
@@ -45,7 +47,6 @@ import { LoginComponentComponent } from './MyComponents/login-component/login-co
     MatFormFieldModule,
     ReactiveFormsModule,
     MatCardModule,
-    GoogleMapsModule,
     HttpClientModule,
     MatCardModule,
     MatButtonModule  

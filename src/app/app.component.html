@@ -1,65 +1,74 @@
 <html>
-    <head>
-        <title></title>
-    </head>
+
+<head>
+  <title></title>
+</head>
+
 <body>
-<div style="background-color:black">
-<mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+  <div style="background-color:black">
+    <mat-toolbar color="primary">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>menu</mat-icon>
-    </button>
-    <span style="color:black" >Assignment-1</span>
-    <span class="example-spacer"></span>
+      </button>
+      <span style="color:black">Assignment-1</span>
+      <span class="example-spacer"></span>
 
 
-    <button mat-icon-button class="example-icon home-icon" aria-label="Example icon-button with home icon">
+      <button mat-icon-button class="example-icon home-icon" aria-label="Example icon-button with home icon">
         <mat-icon>home</mat-icon>
-    </button>
-    <span ><a routerLink="homecomponent" style="color:black">Home</a></span>
-    <span class="example-spacer"></span>
+      </button>
+      <span><a routerLink="homecomponent" style="color:black">Home</a></span>
+      <span class="example-spacer"></span>
+
+      <button mat-icon-button class="example-icon feedback-icon" aria-label="Example icon-button with feedback icon">
+        <mat-icon>feedback</mat-icon>
+      </button>
+      <span><a routerLink="feedbackcomponent" style="color:black">Feedback</a></span>
+      <span class="example-spacer"></span>
 
 
-    <button mat-icon-button class="example-icon register-icon" aria-label="Example icon-button with register icon">
-        <!-- Whatever is written in mat-icon is visible like person-add is written so register icon will be visible --> 
+      <button mat-icon-button class="example-icon register-icon" aria-label="Example icon-button with register icon">
+        <!-- Whatever is written in mat-icon is visible like person-add is written so register icon will be visible -->
         <mat-icon>person-add</mat-icon>
-    </button>
+      </button>
       <span><a routerLink="registrationcomponent" style="color:black">Register</a></span>
       <span class="example-spacer"></span>
 
 
       <button mat-icon-button class="example-icon register-icon" aria-label="Example icon-button with register icon">
-        <!-- Whatever is written in mat-icon is visible like person-add is written so register icon will be visible --> 
+        <!-- Whatever is written in mat-icon is visible like person-add is written so register icon will be visible -->
         <mat-icon>person-add</mat-icon>
-    </button>
-      <span><a routerLink="logincomponent" style="color:black">Login</a></span>
+      </button>
+      <span><a routerLink="login-component" style="color:black">Login</a></span>
       <span class="example-spacer"></span>
 
 
-    <button mat-icon-button class="example-icon product-icon" aria-label="Example icon-button with product icon">
-        <!-- Whatever is written in mat-icon is visible like shop is written so product icon will be visible --> 
+      <button mat-icon-button class="example-icon product-icon" aria-label="Example icon-button with product icon">
+        <!-- Whatever is written in mat-icon is visible like shop is written so product icon will be visible -->
         <mat-icon>shop</mat-icon>
       </button>
       <span><a routerLink="productscomponent" style="color:black">Products</a></span>
       <span class="example-spacer"></span>
 
 
-    <button mat-icon-button class="example-icon about-icon" aria-label="Example icon-button with about icon">
-      <!-- Whatever is written in mat-icon is visible like search is written so search icon will be visible --> 
-      <mat-icon>search</mat-icon>
-    </button>
-    <span><a routerLink="aboutcomponent" style="color:black">About</a></span>
-    <span class="example-spacer"></span>
-    
+      <button mat-icon-button class="example-icon about-icon" aria-label="Example icon-button with about icon">
+        <!-- Whatever is written in mat-icon is visible like search is written so search icon will be visible -->
+        <mat-icon>search</mat-icon>
+      </button>
+      <span><a routerLink="aboutcomponent" style="color:black">About</a></span>
+      <span class="example-spacer"></span>
 
-    <button mat-icon-button class="example-icon contact-icon" aria-label="Example icon-button with contact icon">
+
+      <button mat-icon-button class="example-icon contact-icon" aria-label="Example icon-button with contact icon">
         <mat-icon>phone</mat-icon>
-    </button>
-    <span><a routerLink="contactcomponent" style="color:black">Contact</a></span>
-    <span class="example-spacer"></span>
+      </button>
+      <span><a routerLink="contactcomponent" style="color:black">Contact</a></span>
+      <span class="example-spacer"></span>
 
-</mat-toolbar>
-<router-outlet></router-outlet>
+    </mat-toolbar>
+    <router-outlet></router-outlet>
 
-</div>
+  </div>
 </body>
+
 </html>

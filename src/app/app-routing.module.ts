@@ -7,6 +7,7 @@ import { ProductsComponentComponent } from './MyComponents/products-component/pr
 import { ProductDetailsComponentComponent } from './MyComponents/product-details-component/product-details-component.component';
 import { RegistrationComponentComponent } from './MyComponents/registration-component/registration-component.component';
 import { LoginComponentComponent } from './MyComponents/login-component/login-component.component';
+import { FeedbackComponentComponent } from './MyComponents/feedback-component/feedback-component.component';
 
 const routes: Routes = [
   {
@@ -34,7 +35,11 @@ const routes: Routes = [
   },
   {
     component:LoginComponentComponent,
-    path:'logincomponent'
+    path:'login-component'
+  },
+  {
+    component:FeedbackComponentComponent,
+    path:'feedbackcomponent'
   }
 ];
 

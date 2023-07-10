@@ -1,0 +1,65 @@
+
+<div class="container p-5 text-center">
+    <div class="row">
+        <div class="col-md-4"><br>
+            <div class="bg-primary p-4 text-center">
+                <h2>Feedback Form</h2>
+            </div>
+            <form [formGroup]="feedbackForms" (ngSubmit)="handleSubmit()">
+                <div class="name">
+                    <br><label for="">Enter Your Name: </label>
+                    <input type="text" name="name" [class.is-invalid]="f['name'].invalid && f['name'].touched"
+                        class="form-control" formControlName="name">
+                    <div class="alert alert-danger" *ngIf="f['name'].invalid && f['name'].touched">
+                        <div *ngIf="f['name'].errors && f['name'].errors['required']"> Name is required</div>
+                        <div *ngIf="f['name'].errors && f['name'].errors['minlength']">
+                            3 Characters must
+                        </div>
+                        <div *ngIf="f['name'].errors && f['name'].errors['maxlength']">
+                            20 Characters Max
+                        </div>
+                    </div>
+
+                </div>
+                <div class="email"><br>
+                    <label for="email">Enter Your Email: </label>&nbsp;
+                    <input type="email" name="email" [class.is-invalid]="f['email'].invalid && f['email'].touched"
+                        class="form-control" formControlName="email">
+                    <div class="alert alert-danger" *ngIf="f['email'].invalid && f['email'].touched">
+                        <div *ngIf="f['email'].errors && f['email'].errors['required']">
+                            Email is required
+                        </div>
+                        <div *ngIf="f['email'].errors && f['email'].errors['email']">
+                            Please Enter a valid email address!
+                        </div>
+                    </div>
+                </div>
+                <div class="message"><br>
+                    <label for="message">Message</label>
+                    <textarea id="message" [class.is-invalid]="f['message'].invalid  && f['message'].touched"
+                        class="form-control" formControlName="message"></textarea>
+                    <div class="alert alert-danger" *ngIf="f['message'].invalid && f['message'].touched">
+                        <div *ngIf="f['message'].errors && f['message'].errors['required']">
+                            Message is required
+                        </div>
+                        <div *ngIf="f['message'].errors && f['message'].errors['minlength']">
+                            10 Characters must
+                        </div>
+                        <div *ngIf="f['message'].errors && f['message'].errors['maxlength']">
+                            100 Characters Max
+                        </div>
+                    </div>
+                    <div class="character-counter bg-primary"> Remaining characters: {{ remainingChars }}
+                    </div>
+                </div>
+                <div class="submit"><br>
+                    <button type="submit" [disabled]="feedbackForms.invalid || remainingChars < 0"
+                        class="btn btn-primary">Submit</button><br>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+</div>

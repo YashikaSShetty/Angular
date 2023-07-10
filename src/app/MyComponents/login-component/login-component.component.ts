@@ -12,9 +12,12 @@ export class LoginComponentComponent {
     email:new FormControl('',[Validators.required,Validators.email]),
     password:new FormControl('',[Validators.required])
   });
+  successMessage!: string;
   handleSubmit()
   {
     console.log(this.loginForms.value);
+    this.successMessage = 'Form submitted successfully!';
+    this.loginForms.reset();
   }
   get f()
   {
