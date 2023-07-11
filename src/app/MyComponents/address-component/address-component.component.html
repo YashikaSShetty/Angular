@@ -1,4 +1,4 @@
-<p>address-component works!</p>
+
 <div class="container  p-5  text-center">
     <div class="row">
         <div class="col-md-4"><br>
@@ -8,19 +8,19 @@
             <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
                 <div formArrayName="addresses">
                     <div *ngFor="let address of addressControls.controls; let i=index" [formGroupName]="i">
-                        <h3>Address {{ i + 1 }}</h3>
+                        <h3 style="color: blue;">Address {{ i + 1 }}</h3>
                         <div class="street">
                             <label>Street:</label>&nbsp;
-                            <input type="text" formControlName="street"><br>
-                        </div>
+                            <input type="text" formControlName="street">
+                        </div><br>
                         <div class="City">
                             <label>City: </label>&nbsp;
                             <input type="text" formControlName="city">
-                        </div>
+                        </div><br>
                         <div class="State">
                             <label>State: </label>&nbsp;
                             <input type="text" formControlName="state">
-                        </div>
+                        </div><br>
                         <div class="postalCode">
                             <label>Postal Code: </label>&nbsp;
                             <input type="text" formControlName="postalCode">
