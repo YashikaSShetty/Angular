@@ -25,7 +25,8 @@ import { FeedbackComponentComponent } from './MyComponents/feedback-component/fe
 import { AddressComponentComponent } from './MyComponents/address-component/address-component.component';
 import { CounterComponentComponent } from './MyComponents/counter-component/counter-component.component';
 import { MatMenuModule } from '@angular/material/menu';
-
+import { MatBadgeModule } from '@angular/material/badge';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 
 @NgModule({
@@ -56,7 +57,9 @@ import { MatMenuModule } from '@angular/material/menu';
     HttpClientModule,
     MatCardModule,
     MatButtonModule,
-    MatMenuModule 
+    MatMenuModule,
+    MatBadgeModule,
+    GoogleMapsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,2 +1,12 @@
-<!-- This page is visible when Contact is clicked in the Navigation Bar -->
-<p>This is the Contact Component</p>
+<h2 class="form-heading">Google Maps </h2>
+<div class="google-map">
+    <google-map height="400px" width="750px" [center]="center" [zoom]="zoom" (mapClick)="moveMap($event)"
+        (mapMousemove)="move($event)" (mapClick)="onChoseLocation($event)">
+        <map-marker *ngFor="let markerPosition of markerPositions" [position]="markerPosition"
+            [options]="markerOptions"></map-marker>
+
+        <map-marker></map-marker>
+    </google-map>
+    <div>
+        <div class="lat-lng-container">Latitude: {{display?.lat}}</div>
+        <div class="lat-lng-container">Longitude: {{display?.lng}}</div>
