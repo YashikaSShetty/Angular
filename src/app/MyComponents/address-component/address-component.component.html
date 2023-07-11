@@ -1,28 +1,28 @@
 
 <div class="container  p-5  text-center">
     <div class="row">
-        <div class="col-md-4"><br>
+        <div class="col-md-4">
             <div class="bg-primary p-4 text-center">
                 <h2>Address Form</h2>
             </div>
             <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
                 <div formArrayName="addresses">
                     <div *ngFor="let address of addressControls.controls; let i=index" [formGroupName]="i">
-                        <br><b><i><h3 style="color: blue;">Address {{ i + 1 }}</h3></i></b>
+                        <br><b><i><h3 style="color: blue;">Address {{ i + 1 }} :</h3></i></b>
                         <div class="street">
-                            <label>Street:</label>&nbsp;
-                            <input type="text" formControlName="street">
+                            <label><b>Street: </b></label>&nbsp;
+                            <input type="text" formControlName="street" >
                         </div><br>
                         <div class="City">
-                            <label>City: </label>&nbsp;
+                            <label><b>City: </b></label>&nbsp;
                             <input type="text" formControlName="city">
                         </div><br>
                         <div class="State">
-                            <label>State: </label>&nbsp;
+                            <label><b>State: </b></label>&nbsp;
                             <input type="text" formControlName="state">
                         </div><br>
                         <div class="postalCode">
-                            <label>Postal Code: </label>&nbsp;
+                            <label><b>Postal Code: </b></label>&nbsp;
                             <input type="text" formControlName="postalCode">
                         </div><br>
                         <button type="button"  class="btn btn-primary" (click)="removeAddress(i)">Remove Address</button>&nbsp;
