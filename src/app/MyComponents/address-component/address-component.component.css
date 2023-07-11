@@ -1,15 +1,45 @@
-div.col-md-4{
+div.addresses {
     background-color: #a9d6f4;
     height: 3000 px;
     width: 3000 px;
 }
-div.bg-primary.p-4.text-center{
+
+div.street {
     background-color: #a9d6f4;
     height: 3000 px;
     width: 3000 px;
 }
-h3{
+
+div.State {
     background-color: #a9d6f4;
     height: 3000 px;
     width: 3000 px;
+}
+
+div.City {
+    background-color: #a9d6f4;
+    height: 3000 px;
+    width: 3000 px;
+}
+
+div.postalCode {
+    background-color: #a9d6f4;
+    height: 3000 px;
+    width: 3000 px;
+}
+
+div.bg-primary.p-4.text-center {
+    background-color: #a9d6f4;
+    height: 3000 px;
+    width: 3000 px;
+}
+
+h3 {
+    background-color: #a9d6f4;
+    height: 3000 px;
+    width: 3000 px;
+}
+
+div.button {
+    background-color: #a9d6f4;
 }
