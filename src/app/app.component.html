@@ -7,11 +7,32 @@
 <body>
   <div style="background-color:black">
     <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-        <mat-icon>menu</mat-icon>
-      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"[matMenuTriggerFor]="menu">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+            <button  mat-menu-item class="counter-icon">
+              <mat-icon>count</mat-icon>
+            <span><a routerLink="countercomponent" style="color:black">Counter</a></span>
+            <span></span>
+      
+          </button>
+          <button mat-menu-item disabled>
+            <mat-icon>voicemail</mat-icon>
+            <span>Check voicemail</span>
+          </button>
+          <button mat-menu-item>
+            <mat-icon>notifications_off</mat-icon>
+            <span>Disable alerts</span>
+          </button>
+        </mat-menu>
       <span style="color:black">Assignments</span>
       <span class="example-spacer"></span>
+
+
+
+
+
 
 
       <button mat-icon-button class="example-icon home-icon" aria-label="Example icon-button with home icon">

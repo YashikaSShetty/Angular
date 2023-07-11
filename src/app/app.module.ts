@@ -24,6 +24,8 @@ import { LoginComponentComponent } from './MyComponents/login-component/login-co
 import { FeedbackComponentComponent } from './MyComponents/feedback-component/feedback-component.component';
 import { AddressComponentComponent } from './MyComponents/address-component/address-component.component';
 import { CounterComponentComponent } from './MyComponents/counter-component/counter-component.component';
+import { MatMenuModule } from '@angular/material/menu';
+
 
 
 @NgModule({
@@ -53,7 +55,8 @@ import { CounterComponentComponent } from './MyComponents/counter-component/coun
     MatCardModule,
     HttpClientModule,
     MatCardModule,
-    MatButtonModule  
+    MatButtonModule,
+    MatMenuModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
