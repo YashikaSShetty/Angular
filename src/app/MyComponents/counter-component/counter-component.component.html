@@ -5,7 +5,7 @@
                 <form [formGroup]="counterForm">
                     <div>
                         <span><b>The value of counter is: {{ counts | async }}</b></span><br><br>
-                        <button type="button" (click)="decrement()">Decrement</button><br><br>
+                        <button type="button" class="btn btn-primary" (click)="decrement()">Decrement</button><br><br>
                         <button type="button" (click)="increment()">Increment</button>
                     </div>
                 </form>
