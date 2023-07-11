@@ -4,7 +4,7 @@
             <div class="bg-primary p-4 text-center">
                 <form [formGroup]="counterForm">
                     <div>
-                        <span><b>The value of counter is: {{ counts | async }}</b></span><br><br>
+                        <span><b>The value of the counter is: {{ counts | async }}</b></span><br><br>
                         <button type="button" class="btn btn-primary" style="background-color: rgb(62, 114, 114);" (click)="decrement()">Decrement</button><br><br>
                         <button type="button" class="btn btn-primary" style="background-color: rgb(62, 114, 114);" (click)="increment()">Increment</button>
                     </div>
