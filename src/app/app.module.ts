@@ -23,6 +23,7 @@ import { RegistrationComponentComponent } from './MyComponents/registration-comp
 import { LoginComponentComponent } from './MyComponents/login-component/login-component.component';
 import { FeedbackComponentComponent } from './MyComponents/feedback-component/feedback-component.component';
 import { AddressComponentComponent } from './MyComponents/address-component/address-component.component';
+import { CounterComponentComponent } from './MyComponents/counter-component/counter-component.component';
 
 
 @NgModule({
@@ -37,6 +38,7 @@ import { AddressComponentComponent } from './MyComponents/address-component/addr
     LoginComponentComponent,
     FeedbackComponentComponent,
     AddressComponentComponent,
+    CounterComponentComponent,
   ],
   imports: [//This is where the required external modules are imported
     BrowserModule,
