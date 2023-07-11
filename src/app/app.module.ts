@@ -22,6 +22,7 @@ import { ProductDetailsComponentComponent } from './MyComponents/product-details
 import { RegistrationComponentComponent } from './MyComponents/registration-component/registration-component.component';
 import { LoginComponentComponent } from './MyComponents/login-component/login-component.component';
 import { FeedbackComponentComponent } from './MyComponents/feedback-component/feedback-component.component';
+import { AddressComponentComponent } from './MyComponents/address-component/address-component.component';
 
 
 @NgModule({
@@ -35,6 +36,7 @@ import { FeedbackComponentComponent } from './MyComponents/feedback-component/fe
     RegistrationComponentComponent,
     LoginComponentComponent,
     FeedbackComponentComponent,
+    AddressComponentComponent,
   ],
   imports: [//This is where the required external modules are imported
     BrowserModule,
