@@ -27,6 +27,7 @@ import { CounterComponentComponent } from './MyComponents/counter-component/coun
 import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { SearchComponentComponent } from './MyComponents/search-component/search-component.component';
 
 
 @NgModule({
@@ -42,6 +43,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
     FeedbackComponentComponent,
     AddressComponentComponent,
     CounterComponentComponent,
+    SearchComponentComponent,
   ],
   imports: [//This is where the required external modules are imported
     BrowserModule,

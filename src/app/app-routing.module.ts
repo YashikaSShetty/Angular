@@ -10,6 +10,7 @@ import { LoginComponentComponent } from './MyComponents/login-component/login-co
 import { FeedbackComponentComponent } from './MyComponents/feedback-component/feedback-component.component';
 import { AddressComponentComponent } from './MyComponents/address-component/address-component.component';
 import { CounterComponentComponent } from './MyComponents/counter-component/counter-component.component';
+import { SearchComponentComponent } from './MyComponents/search-component/search-component.component';
 
 const routes: Routes = [
   {
@@ -50,6 +51,10 @@ const routes: Routes = [
   {
     component:CounterComponentComponent,
     path:'countercomponent'
+  },
+  {
+    component:SearchComponentComponent,
+    path:'searchcomponent'
   }
 ];
 
