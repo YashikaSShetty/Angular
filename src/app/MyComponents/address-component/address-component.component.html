@@ -8,7 +8,7 @@
             <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
                 <div formArrayName="addresses">
                     <div *ngFor="let address of addressControls.controls; let i=index" [formGroupName]="i">
-                        <h3 style="color: blue;">Address {{ i + 1 }}</h3>
+                        <br><b><i><h3 style="color: blue;">Address {{ i + 1 }}</h3></i></b>
                         <div class="street">
                             <label>Street:</label>&nbsp;
                             <input type="text" formControlName="street">
