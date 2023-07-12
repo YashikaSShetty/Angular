@@ -1,3 +1,11 @@
-<p>search-component works!</p><div>
-<input type="text" [formControl]="searchControl" placeholder="Enter search query">
+<BR>
+<div class="CENTER">
+<input type="text" [formControl]="searchControl" placeholder="Enter your search query">
+</div><br>
+<div>
+    <div *ngFor="let result of searchResults">
+        <!-- Display each search result here -->
+        <p>{{ result }}</p>
+      </div>
+      
 </div>

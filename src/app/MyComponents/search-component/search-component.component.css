@@ -1,5 +1,14 @@
-div{
+div.CENTER{
     background: #a9d6f4;
     height: 3000 px;
     width: 3000 px;
+    display: flex;
+    justify-content: center;
+}
+P{
+    background: #a9d6f4;
+    height: 3000 px;
+    width: 3000 px;
+    display: flex;
+    justify-content: center; 
 }
