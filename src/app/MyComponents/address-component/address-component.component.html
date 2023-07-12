@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-4">
             <div class=" p-4 ">
-                <h1 >ADDRESS FORM</h1>
+                <h1>ADDRESS FORM</h1>
             </div>
             <form [formGroup]="addressForm" (ngSubmit)="onSubmit()">
                 <div formArrayName="addresses">
@@ -38,7 +38,7 @@
                     </div>
                     <div class="button">
                         <br><button type="submit" class="btn btn-primary"
-                            [disabled]="addressForm.invalid|| addressControls.length< 1">Submit</button>&nbsp;<br>
+                            [disabled]="addressForm.invalid|| addressControls.length< 1">Submit</button>&nbsp;<br><br>
                     </div>
                 </div>
             </form>

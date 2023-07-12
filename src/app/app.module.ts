@@ -30,6 +30,7 @@ import { GoogleMapsModule } from '@angular/google-maps';
 import { SearchComponentComponent } from './MyComponents/search-component/search-component.component';
 
 
+
 @NgModule({
   declarations: [//This is where the required external modules are declared
     AppComponent,
@@ -61,7 +62,7 @@ import { SearchComponentComponent } from './MyComponents/search-component/search
     MatButtonModule,
     MatMenuModule,
     MatBadgeModule,
-    GoogleMapsModule 
+    GoogleMapsModule, 
   ],
   providers: [],
   bootstrap: [AppComponent]
