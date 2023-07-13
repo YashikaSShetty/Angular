@@ -11,6 +11,7 @@ import { FeedbackComponentComponent } from './MyComponents/feedback-component/fe
 import { AddressComponentComponent } from './MyComponents/address-component/address-component.component';
 import { CounterComponentComponent } from './MyComponents/counter-component/counter-component.component';
 import { SearchComponentComponent } from './MyComponents/search-component/search-component.component';
+import { FeatureComponentComponent } from './MyComponents/feature-component/feature-component.component';
 
 const routes: Routes = [
   {
@@ -55,6 +56,10 @@ const routes: Routes = [
   {
     component:SearchComponentComponent,
     path:'searchcomponent'
+  },
+  {
+    component:FeatureComponentComponent,
+    path:'featurecomponent'
   }
 ];
 

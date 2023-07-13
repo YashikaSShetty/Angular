@@ -28,6 +28,7 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatBadgeModule } from '@angular/material/badge';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { SearchComponentComponent } from './MyComponents/search-component/search-component.component';
+import { FeatureComponentComponent } from './MyComponents/feature-component/feature-component.component';
 
 
 
@@ -45,6 +46,7 @@ import { SearchComponentComponent } from './MyComponents/search-component/search
     AddressComponentComponent,
     CounterComponentComponent,
     SearchComponentComponent,
+    FeatureComponentComponent,
   ],
   imports: [//This is where the required external modules are imported
     BrowserModule,
