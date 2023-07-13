@@ -1,0 +1,22 @@
+<form [formGroup]="pageForm" (ngSubmit)="onPageChange()">
+    <div>
+      <label>Page Number</label>
+      <input type="number" formControlName="pageNumber">
+      <div *ngIf="pageForm.controls['pageNumber'].invalid && pageForm.controls['pageNumber'].touched">
+        <small>Please enter a valid page number.</small>
+      </div>
+    </div>
+    <button type="submit" [disabled]="pageForm.invalid">Go</button>
+  </form>
+  
+  <div>
+    <button [disabled]="currentPage === 1" (click)="onPrevious()">Previous</button>
+    <button [disabled]="currentPage === totalItems / pageSize" (click)="onNext()">Next</button>
+  </div>
+  
+  <div>
+    <ul>
+      <li *ngFor="let item of pagedData">{{ item }}</li>
+    </ul>
+  </div>
+  

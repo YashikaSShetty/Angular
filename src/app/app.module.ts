@@ -29,6 +29,8 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { GoogleMapsModule } from '@angular/google-maps';
 import { SearchComponentComponent } from './MyComponents/search-component/search-component.component';
 import { FeatureComponentComponent } from './MyComponents/feature-component/feature-component.component';
+import { ShoppingCartComponentComponent } from './MyComponents/shopping-cart-component/shopping-cart-component.component';
+import { PaginationComponentComponent } from './MyComponents/pagination-component/pagination-component.component';
 
 
 
@@ -47,6 +49,8 @@ import { FeatureComponentComponent } from './MyComponents/feature-component/feat
     CounterComponentComponent,
     SearchComponentComponent,
     FeatureComponentComponent,
+    ShoppingCartComponentComponent,
+    PaginationComponentComponent,
   ],
   imports: [//This is where the required external modules are imported
     BrowserModule,
