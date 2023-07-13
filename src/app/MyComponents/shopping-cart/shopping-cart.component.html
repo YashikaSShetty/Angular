@@ -1,0 +1,45 @@
+<div class="CENTER">
+
+    <form [formGroup]="cartForm" (ngSubmit)="onAddToCart()">
+        <br>
+        <div>
+            <label>Enter an Item Name: </label>&nbsp;
+            <input type="text" formControlName="name">
+            <div *ngIf="cartForm.controls['name'].invalid && cartForm.controls['name'].touched">
+                <small>Please enter an item name! </small>
+            </div>
+        </div>
+
+        <div>
+            <label>Enter Quantity: </label>&nbsp;
+            <input type="number" formControlName="quantity">
+            <div *ngIf="cartForm.controls['quantity'].invalid && cartForm.controls['quantity'].touched">
+                <small>Please enter a valid quantity (minimum 1).</small>
+            </div>
+        </div>
+
+        <div>
+            <label>Enter Price: </label>&nbsp;
+            <input type="number" step="0.01" formControlName="price">
+            <div *ngIf="cartForm.controls['price'].invalid && cartForm.controls['price'].touched">
+                <small>Please enter a valid price (minimum 0.01).</small>
+            </div>
+        </div>
+
+        <button type="submit" [disabled]="cartForm.invalid">Add to Cart</button>
+    </form>
+
+    <div *ngIf="cartItems.length > 0">
+        <h2>Shopping Cart</h2>
+        <ul>
+            <li *ngFor="let item of cartItems">
+                <span>{{ item.name }}</span>
+                <span>Quantity: {{ item.quantity }}</span>
+                <span>Price: ${{ item.price }}</span>
+                <span>Subtotal: ${{ item.subtotal }}</span>
+                <button (click)="onRemoveFromCart(item)">Remove</button>
+            </li>
+        </ul>
+        <p>Total: ${{ total }}</p>
+    </div>
+</div>

@@ -12,8 +12,9 @@ import { AddressComponentComponent } from './MyComponents/address-component/addr
 import { CounterComponentComponent } from './MyComponents/counter-component/counter-component.component';
 import { SearchComponentComponent } from './MyComponents/search-component/search-component.component';
 import { FeatureComponentComponent } from './MyComponents/feature-component/feature-component.component';
-import { ShoppingCartComponentComponent } from './MyComponents/shopping-cart-component/shopping-cart-component.component';
+// import { ShoppingCartComponentComponent } from './MyComponents/shopping-cart-component/shopping-cart-component.component';
 import { PaginationComponentComponent } from './MyComponents/pagination-component/pagination-component.component';
+import { ShoppingCartComponent } from './MyComponents/shopping-cart/shopping-cart.component';
 
 const routes: Routes = [
   {
@@ -64,8 +65,8 @@ const routes: Routes = [
     path:'featurecomponent'
   },
   {
-    component:ShoppingCartComponentComponent,
-    path:'shoppingcartcomponent'
+    component:ShoppingCartComponent,
+    path:'shopping-cart'
   },
   {
     component:PaginationComponentComponent,

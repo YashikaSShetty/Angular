@@ -7,10 +7,13 @@ import { FormBuilder } from '@angular/forms';
 })
 export class AppComponent {
   title = "Yashika's-Angular-Assignment";
-  constructor(){
-  //setTimeout(()=>{
-  //  this.title="Changed title";
-  // },2000);
-  
+  isFeatureHovered = false;
+  onFeatureHover(): void {
+    this.isFeatureHovered = true;
+  }
+
+  // Function to handle the mouse leave event on the "Feature" menu item
+  onFeatureLeave(): void {
+    this.isFeatureHovered = false;
   }
 }

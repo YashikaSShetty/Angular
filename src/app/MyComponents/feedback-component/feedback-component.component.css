@@ -1,23 +1,27 @@
 div.form-group {
     background: #a9d6f4;
+    padding: 2px 5px;
     height: 3000 px;
     width: 3000 px;
 }
 
 div.name {
     background: #a9d6f4;
+    padding: 2px 5px;
     height: 3000 px;
     width: 3000 px;
 }
 
 div.email {
     background-color: #a9d6f4;
+    padding: 2px 5px;
     height: 3000 px;
     width: 3000 px;
 }
 
 div.message {
     background: #a9d6f4;
+    padding: 2px 5px;
     height: 3000 px;
     width: 3000 px;
 }

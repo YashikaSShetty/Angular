@@ -7,23 +7,35 @@
 <body>
   <div style="background-color:black">
     <mat-toolbar color="primary">
-      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"[matMenuTriggerFor]="menu">
-          <mat-icon>menu</mat-icon>
-          <mat-badge matBadge="2" matBadgeColor="warn" matBadgeSize="small"></mat-badge>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon"
+        [matMenuTriggerFor]="menu">
+        <mat-icon>menu</mat-icon>
+        <mat-badge matBadge="3" matBadgeColor="warn" matBadgeSize="small"></mat-badge>
+      </button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item class="counter-icon">
+          <a routerLink="countercomponent" style="color:black"><mat-icon>add</mat-icon></a>
+          <span><a routerLink="countercomponent" style="color:black">Counter</a></span>
+          <span></span>
+
         </button>
-        <mat-menu #menu="matMenu">
-            <button  mat-menu-item class="counter-icon">
-              <mat-icon>add</mat-icon>
-            <span><a routerLink="countercomponent" style="color:black">Counter</a></span>
-            <span></span>
-      
-          </button>
-          <button mat-menu-item>
-            <mat-icon>search</mat-icon>
-             <span><a routerLink="searchcomponent" style="color:black">Search</a></span>
-             <span></span>
-          </button>
-          <!-- <button mat-menu-item disabled>
+        <button mat-menu-item>
+          <a routerLink="searchcomponent" style="color:black"><mat-icon>search</mat-icon></a>
+          <span><a routerLink="searchcomponent" style="color:black">Search</a></span>
+          <span></span>
+        </button>
+        <button mat-menu-item (mouseenter)="onFeatureHover()" (mouseleave)="onFeatureLeave()">
+          <a routerLink="featurecomponent" style="color:black"><mat-icon>arrow_forward</mat-icon></a>
+          <span><a routerLink="featurecomponent" style="color:black">Feature</a></span>&nbsp;
+          <ng-container *ngIf="isFeatureHovered" xPosition="after">
+            <a routerLink="shopping-cart" style="color:black"><mat-icon>shop</mat-icon></a>
+            <span><a routerLink="shopping-cart" style="color:black">Shopping Cart</a></span>
+          </ng-container>
+        </button>
+
+
+
+        <!-- <button mat-menu-item disabled>
             <mat-icon>voicemail</mat-icon>
             <span>Check voicemail</span>
           </button>
@@ -31,12 +43,9 @@
             <mat-icon>notifications_off</mat-icon>
             <span>Disable alerts</span>
           </button> -->
-        </mat-menu>
+      </mat-menu>
       <span style="color:black">Assignments</span>
       <span class="example-spacer"></span>
-
-
-
 
 
 

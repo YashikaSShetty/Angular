@@ -1,0 +1,53 @@
+div.CENTER{
+    border: 5 px;
+    margin: auto;
+    width: 50%;
+    padding: 10 px;
+    justify-content: center;
+    display: flex;
+    background-color: #a9d6f4;
+}
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+    width: 200px;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+span {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+button {
+    padding: 2px 5px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
